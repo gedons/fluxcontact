@@ -117,7 +117,7 @@ export default {
   },
   created() {
     // Fetch the list of contacts from your backend API
-    fetch('http://localhost:3000/api/contacts')
+    fetch('https://fcontact-api.onrender.com/api/contacts')
       .then((response) => {
         if (response.ok) {
           return response.json();

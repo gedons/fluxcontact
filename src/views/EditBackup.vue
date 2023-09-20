@@ -112,7 +112,7 @@ export default {
     // Fetch the contact details for editing
     const id = this.$route.params.id; // Get the contact ID from the route parameters
     
-    fetch(`http://localhost:3000/api/contacts/${id}`)
+    fetch(`https://fcontact-api.onrender.com/api/contacts/${id}`)
       .then((response) => {
         if (response.ok) {
           return response.json();

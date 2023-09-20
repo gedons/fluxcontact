@@ -113,7 +113,7 @@ export default {
     createBackup() {
       this.loading = true;
       // Send a POST request to your API to create a new contact backup
-      fetch('http://localhost:3000/api/contacts', {
+      fetch('https://fcontact-api.onrender.com/api/contacts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
