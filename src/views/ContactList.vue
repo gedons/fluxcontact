@@ -146,7 +146,7 @@ export default {
     confirmDelete(id) {
       if (confirm('Are you sure you want to delete this contact?')) {
         // Send a DELETE request to your backend API to delete the contact by ID
-        fetch(`http://localhost:3000/api/contacts/${id}`, {
+        fetch(`https://fcontact-api.onrender.com/contacts/${id}`, {
           method: 'DELETE',
         })
           .then((response) => {
